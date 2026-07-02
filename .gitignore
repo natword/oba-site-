@@ -1,0 +1,4 @@
+# Fichiers lourds / temporaires
+_deploy/
+_ancienne-version/
+.DS_Store
