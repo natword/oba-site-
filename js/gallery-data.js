@@ -18,22 +18,22 @@ const OBA_GALLERY = [
 
   {
     src: "images/fondateur-portrait.jpg",
-    legende: "L'Ambassadeur Cheick Keita, président fondateur d'Open Business Africa",
+    legende: "L'Ambassadeur Dr Cheick KEITA, président fondateur d'Open Business Africa",
     categorie: "portraits"
   },
   {
     src: "images/fondateur-boardroom.jpg",
-    legende: "L'Ambassadeur Cheick Keita — Paris",
+    legende: "L'Ambassadeur Dr Cheick KEITA — Paris",
     categorie: "portraits"
   },
   {
     src: "images/fondateur-salon.jpg",
-    legende: "Portrait officiel — Ambassadeur Cheick Keita",
+    legende: "Portrait officiel — Ambassadeur Dr Cheick KEITA",
     categorie: "portraits"
   },
   {
     src: "images/fondateur-tabouret.jpg",
-    legende: "L'Ambassadeur Cheick Keita",
+    legende: "L'Ambassadeur Dr Cheick KEITA",
     categorie: "portraits"
   },
   {

@@ -13,7 +13,7 @@ Fraunces & Archivo, animations au défilement, photos officielles intégrées.
 ├── about.html            À propos (histoire, valeurs, réseau)
 ├── vision.html           Notre vision (piliers, feuille de route, ODD)
 ├── services.html         Nos missions (4 missions détaillées + méthode)
-├── fondateur.html        Le fondateur — Ambassadeur Cheick Keita
+├── fondateur.html        Le fondateur — Ambassadeur Dr Cheick KEITA
 ├── galerie.html          Galerie photo (filtres + visionneuse plein écran)
 ├── actualites.html       Actualités (alimenté par js/news-data.js)
 ├── css/style.css         Feuille de style unique pour tout le site
