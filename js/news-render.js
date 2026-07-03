@@ -33,9 +33,9 @@
         '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">' +
         '<stop offset="0" stop-color="#0C1D3F"/><stop offset="1" stop-color="#081226"/></linearGradient></defs>' +
         '<rect width="1200" height="750" fill="url(#g)"/>' +
-        '<g fill="none" stroke="#C9A24B" stroke-width="1.5" opacity="0.75">' +
+        '<g fill="none" stroke="#C8102E" stroke-width="1.5" opacity="0.75">' +
         '<circle cx="600" cy="375" r="120"/><circle cx="600" cy="375" r="95" opacity="0.5"/></g>' +
-        '<text x="600" y="393" text-anchor="middle" font-family="Georgia,serif" font-size="52" font-style="italic" fill="#C9A24B">OBA</text>' +
+        '<text x="600" y="393" text-anchor="middle" font-family="Arial,sans-serif" font-size="46" font-weight="700" fill="#C8102E">OBA</text>' +
         '</svg>'
       );
 

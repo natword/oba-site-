@@ -1,6 +1,6 @@
 /* ==========================================================================
    OPEN BUSINESS AFRICA — Design System « Prestige Panafricain »
-   Bleu nuit · Or · Ivoire — Fraunces / Archivo
+   Bleu nuit · Rouge · Blanc — Libre Franklin / Archivo
    ========================================================================== */
 
 :root{
@@ -9,9 +9,9 @@
   --navy:#0C1D3F;
   --navy-2:#122A55;
   --navy-3:#1A3768;
-  --gold:#C9A24B;
-  --gold-light:#E8CD8A;
-  --gold-deep:#A8823A;
+  --gold:#C8102E;
+  --gold-light:#EE7A84;
+  --gold-deep:#9E0C22;
   --ivory:#F6F1E6;
   --paper:#FBF8F1;
   --white:#FFFFFF;
@@ -19,7 +19,7 @@
   --ink:#101828;
 
   /* Typo */
-  --font-display:"Fraunces",Georgia,serif;
+  --font-display:"Libre Franklin","Helvetica Neue",Arial,sans-serif;
   --font-body:"Archivo","Helvetica Neue",Arial,sans-serif;
 
   /* Rythme */
@@ -49,16 +49,17 @@ a{color:inherit;text-decoration:none}
 ul{list-style:none}
 button{font:inherit;cursor:pointer;border:0;background:none}
 
-::selection{background:var(--gold);color:var(--midnight)}
+::selection{background:var(--gold);color:#fff}
 
 .container{max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter)}
 
 /* ------------------------------------------------ Typographie */
-h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.08;color:var(--midnight)}
-.h-hero{font-size:clamp(2.6rem,6vw,4.9rem);font-weight:560;letter-spacing:-.01em}
-.h-section{font-size:clamp(2rem,4.2vw,3.3rem);font-weight:560;letter-spacing:-.01em}
+h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.15;color:var(--midnight)}
+.h-hero{font-size:clamp(1.9rem,4vw,3.2rem);font-weight:700;letter-spacing:0}
+.h-section{font-size:clamp(1.55rem,2.9vw,2.3rem);font-weight:700;letter-spacing:0}
 .h-card{font-family:var(--font-display);font-size:1.45rem;font-weight:600;line-height:1.2}
-.gold-italic{font-style:italic;font-weight:430;color:var(--gold)}
+.gold-italic{font-style:normal;font-weight:700;color:var(--gold)}
+.section--dark .gold-italic,.hero .gold-italic,.page-hero .gold-italic,.cta-band .gold-italic{color:var(--gold-light)}
 .on-dark{color:var(--ivory)}
 .lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:#3A4557;max-width:62ch}
 .on-dark-p{color:#B9C2D4}
@@ -101,8 +102,8 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
 .brand{display:flex;align-items:center;gap:.85rem;color:var(--ivory)}
 .brand__mark{color:var(--gold);display:grid;place-items:center}
 .brand__name{display:flex;flex-direction:column;line-height:1.05;font-family:var(--font-display)}
-.brand__name strong{font-size:1.06rem;font-weight:640;letter-spacing:.02em}
-.brand__name em{font-style:italic;font-weight:420;color:var(--gold);font-size:.98rem}
+.brand__name strong{font-size:1.06rem;font-weight:700;letter-spacing:.02em}
+.brand__name em{font-style:normal;font-weight:600;color:var(--gold-light);font-size:.98rem}
 
 .main-nav ul{display:flex;gap:clamp(1rem,2.4vw,2.1rem);align-items:center}
 .main-nav a{
@@ -121,12 +122,12 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
   display:inline-flex;align-items:center;gap:.7rem;
   font-weight:600;font-size:.95rem;letter-spacing:.03em;
   padding:.95rem 1.9rem;border:1px solid var(--gold);
-  color:var(--midnight);background:var(--gold);
+  color:#fff;background:var(--gold);
   transition:background .35s var(--ease),color .35s,border-color .35s,transform .35s;
 }
-.btn:hover{background:var(--gold-light);border-color:var(--gold-light);transform:translateY(-2px)}
+.btn:hover{background:var(--gold-deep);border-color:var(--gold-deep);transform:translateY(-2px)}
 .btn--ghost{background:transparent;color:var(--ivory)}
-.btn--ghost:hover{background:var(--gold);color:var(--midnight)}
+.btn--ghost:hover{background:var(--gold);color:#fff}
 .btn--dark{background:var(--midnight);border-color:var(--midnight);color:var(--ivory)}
 .btn--dark:hover{background:var(--navy-2);border-color:var(--navy-2)}
 .btn .arrow{transition:transform .35s var(--ease)}
@@ -143,7 +144,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
 /* ------------------------------------------------ Motif africain (fond subtil) */
 .pattern-dark::before{
   content:"";position:absolute;inset:0;pointer-events:none;opacity:.05;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23C9A24B' stroke-width='1'%3E%3Cpath d='M0 36 L36 0 L72 36 L36 72 Z'/%3E%3Cpath d='M18 36 L36 18 L54 36 L36 54 Z'/%3E%3Ccircle cx='36' cy='36' r='4'/%3E%3C/g%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23C8102E' stroke-width='1'%3E%3Cpath d='M0 36 L36 0 L72 36 L36 72 Z'/%3E%3Cpath d='M18 36 L36 18 L54 36 L36 54 Z'/%3E%3Ccircle cx='36' cy='36' r='4'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* ------------------------------------------------ Hero accueil */
@@ -185,7 +186,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
 .hero__portrait img{box-shadow:var(--shadow-lg)}
 .frame figcaption{
   position:absolute;z-index:4;left:0;bottom:-1.1rem;
-  background:var(--gold);color:var(--midnight);
+  background:var(--gold);color:#fff;
   font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
   padding:.55rem 1.1rem;max-width:min(100%,34rem);line-height:1.35;
 }
@@ -208,12 +209,12 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
 
 /* ------------------------------------------------ Bandeau défilant */
 .marquee{
-  background:var(--gold);color:var(--midnight);overflow:hidden;
+  background:var(--gold);color:#fff;overflow:hidden;
   padding-block:.85rem;border-block:1px solid var(--gold-deep);
 }
 .marquee__track{display:flex;gap:3rem;width:max-content;animation:marquee 30s linear infinite}
 .marquee span{
-  font-family:var(--font-display);font-style:italic;font-size:1.05rem;font-weight:500;
+  font-family:var(--font-display);font-style:normal;font-size:.98rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
   display:flex;align-items:center;gap:3rem;white-space:nowrap;
 }
 .marquee span::after{content:"✦";font-style:normal;font-size:.8rem}
@@ -233,10 +234,10 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(201,162,75,.35);border:1px solid rgba(201,162,75,.35)}
 .stat{background:var(--midnight);padding:2.4rem 1.8rem;text-align:left}
 .stat__num{
-  font-family:var(--font-display);font-size:clamp(2.6rem,4.5vw,3.8rem);font-weight:560;
-  color:var(--gold);line-height:1;display:flex;align-items:baseline;gap:.15rem;
+  font-family:var(--font-display);font-size:clamp(2.2rem,3.8vw,3.2rem);font-weight:700;
+  color:var(--gold-light);line-height:1;display:flex;align-items:baseline;gap:.15rem;
 }
-.stat__suffix{font-size:.55em;font-style:italic}
+.stat__suffix{font-size:.55em}
 .stat__label{margin-top:.9rem;color:#B9C2D4;font-size:.92rem;line-height:1.5}
 
 /* ------------------------------------------------ Cartes mission */
@@ -254,7 +255,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
 .pillar:hover{transform:translateY(-8px);box-shadow:var(--shadow-md);border-color:transparent}
 .pillar:hover::before{transform:scaleX(1)}
 .pillar__num{
-  font-family:var(--font-display);font-style:italic;font-weight:300;font-size:2.6rem;
+  font-family:var(--font-display);font-weight:700;font-size:2.6rem;
   color:transparent;-webkit-text-stroke:1px var(--gold);line-height:1;margin-bottom:1.2rem;display:block;
 }
 .pillar h3{font-size:1.28rem;margin-bottom:.8rem}
@@ -300,12 +301,12 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
   background:linear-gradient(180deg,rgba(8,18,38,.84),rgba(8,18,38,.68) 50%,rgba(8,18,38,.9));
 }
 .quote-band blockquote{
-  font-family:var(--font-display);font-style:italic;font-weight:430;
-  font-size:clamp(1.5rem,3.4vw,2.6rem);line-height:1.35;max-width:20em;margin-inline:auto;
+  font-family:var(--font-display);font-style:normal;font-weight:600;
+  font-size:clamp(1.25rem,2.5vw,1.9rem);line-height:1.35;max-width:20em;margin-inline:auto;
   padding-inline:var(--gutter);
 }
 .quote-band blockquote::before{
-  content:"“";display:block;font-size:3em;line-height:.6;color:var(--gold);font-style:normal;margin-bottom:.25em;
+  content:"“";display:block;font-size:3em;line-height:.6;color:var(--gold-light);font-style:normal;margin-bottom:.25em;
 }
 .quote-band cite{
   display:inline-flex;align-items:center;gap:.9rem;margin-top:2rem;
@@ -330,7 +331,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
 }
 .section--dark .timeline__item::before{background:var(--midnight)}
 .timeline__year{
-  font-family:var(--font-display);font-style:italic;font-size:1.5rem;color:var(--gold-deep);
+  font-family:var(--font-display);font-weight:700;font-size:1.25rem;color:var(--gold-deep);
   display:block;margin-bottom:.35rem;
 }
 .section--dark .timeline__year{color:var(--gold-light)}
@@ -441,7 +442,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
   display:grid;grid-template-columns:200px 1fr;gap:1.5rem;
   padding:1.4rem 0;border-bottom:1px solid #E7E0CF;align-items:baseline;
 }
-.role__org{font-family:var(--font-display);font-style:italic;color:var(--gold-deep);font-size:1.02rem}
+.role__org{font-family:var(--font-display);font-weight:700;color:var(--gold-deep);font-size:.98rem}
 .role h3{font-size:1.08rem;font-family:var(--font-body);font-weight:650;color:var(--ink)}
 .role p{font-size:.92rem;color:#5A6577;margin-top:.3rem}
 .section--dark .roles{border-color:rgba(201,162,75,.25)}
@@ -458,7 +459,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
   transition:all .3s var(--ease);
 }
 .gallery-filters button:hover{border-color:var(--gold)}
-.gallery-filters button.is-active{background:var(--midnight);color:var(--gold-light);border-color:var(--midnight)}
+.gallery-filters button.is-active{background:var(--gold);color:#fff;border-color:var(--gold)}
 
 .gallery-grid{columns:3;column-gap:1.4rem}
 .gallery-item{
@@ -479,7 +480,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
 }
 .gallery-empty{
   text-align:center;padding:4rem 1rem;border:1px dashed #D8D0BC;color:#5A6577;
-  font-family:var(--font-display);font-style:italic;font-size:1.15rem;
+  font-family:var(--font-display);font-size:1.05rem;
 }
 
 /* Lightbox */
@@ -499,7 +500,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
   width:52px;height:52px;display:grid;place-items:center;
   border:1px solid rgba(201,162,75,.4);transition:all .3s;background:rgba(8,18,38,.5);
 }
-.lightbox__close:hover,.lightbox__nav:hover{background:var(--gold);color:var(--midnight)}
+.lightbox__close:hover,.lightbox__nav:hover{background:var(--gold);color:#fff}
 .lightbox__close{top:1.2rem;right:1.2rem}
 .lightbox__nav--prev{left:1.2rem;top:50%;transform:translateY(-50%)}
 .lightbox__nav--next{right:1.2rem;top:50%;transform:translateY(-50%)}
@@ -535,7 +536,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
   transition:all .3s var(--ease);
 }
 .news-filters button:hover{border-color:var(--gold)}
-.news-filters button.is-active{background:var(--midnight);color:var(--gold-light);border-color:var(--midnight)}
+.news-filters button.is-active{background:var(--gold);color:#fff;border-color:var(--gold)}
 
 /* ------------------------------------------------ Contact */
 .contact-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(2.5rem,6vw,5rem)}
@@ -585,16 +586,16 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
   border:1px solid rgba(201,162,75,.4);color:var(--gold-light);font-size:.85rem;font-weight:700;
   transition:all .3s;
 }
-.socials a:hover{background:var(--gold);color:var(--midnight)}
+.socials a:hover{background:var(--gold);color:#fff}
 .to-top{
   position:fixed;right:1.4rem;bottom:1.4rem;z-index:90;
   width:50px;height:50px;display:grid;place-items:center;
-  background:var(--gold);color:var(--midnight);font-size:1.1rem;box-shadow:var(--shadow-md);
+  background:var(--gold);color:#fff;font-size:1.1rem;box-shadow:var(--shadow-md);
   opacity:0;visibility:hidden;transform:translateY(12px);
   transition:all .4s var(--ease);
 }
 .to-top.is-visible{opacity:1;visibility:visible;transform:none}
-.to-top:hover{background:var(--gold-light)}
+.to-top:hover{background:var(--gold-deep)}
 
 /* ------------------------------------------------ Révélations au scroll */
 .reveal{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
@@ -648,3 +649,17 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
   .stat{padding:1.8rem 1.4rem}
   .lightbox__nav{display:none}
 }
+
+/* ------------------------------------------------ Mur des drapeaux africains */
+.flag-wall{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(102px,1fr));
+  gap:.7rem;margin-top:3rem;
+}
+.flag-wall figure{
+  background:var(--white);border:1px solid #E7E0CF;padding:.85rem .35rem .7rem;
+  text-align:center;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s;
+}
+.flag-wall figure:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--gold)}
+
+.flag-wall figcaption{font-size:.64rem;font-weight:600;letter-spacing:.03em;color:#4A5568;margin-top:.4rem;line-height:1.25}
+.flag-wall img{width:44px;height:auto;margin-inline:auto;display:block;box-shadow:0 1px 4px rgba(8,18,38,.25)}
