@@ -96,9 +96,9 @@
         '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">' +
         '<stop offset="0" stop-color="#0C1D3F"/><stop offset="1" stop-color="#081226"/></linearGradient></defs>' +
         '<rect width="800" height="1000" fill="url(#g)"/>' +
-        '<g fill="none" stroke="#C8102E" stroke-width="1.5" opacity="0.75">' +
+        '<g fill="none" stroke="#8E1638" stroke-width="1.5" opacity="0.75">' +
         '<circle cx="400" cy="470" r="150"/><circle cx="400" cy="470" r="120" opacity="0.5"/></g>' +
-        '<text x="400" y="485" text-anchor="middle" font-family="Arial,sans-serif" font-size="56" font-weight="700" fill="#C8102E">OBA</text>' +
+        '<text x="400" y="485" text-anchor="middle" font-family="Arial,sans-serif" font-size="56" font-weight="700" fill="#8E1638">OBA</text>' +
         '<text x="400" y="700" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#8E97A8">Photo à venir</text>' +
         '</svg>'
       );

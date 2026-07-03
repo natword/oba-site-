@@ -9,9 +9,9 @@
   --navy:#0C1D3F;
   --navy-2:#122A55;
   --navy-3:#1A3768;
-  --gold:#C8102E;
-  --gold-light:#EE7A84;
-  --gold-deep:#9E0C22;
+  --gold:#8E1638;
+  --gold-light:#D998A8;
+  --gold-deep:#6C0F2B;
   --ivory:#F6F1E6;
   --paper:#FBF8F1;
   --white:#FFFFFF;
@@ -144,7 +144,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.
 /* ------------------------------------------------ Motif africain (fond subtil) */
 .pattern-dark::before{
   content:"";position:absolute;inset:0;pointer-events:none;opacity:.05;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23C8102E' stroke-width='1'%3E%3Cpath d='M0 36 L36 0 L72 36 L36 72 Z'/%3E%3Cpath d='M18 36 L36 18 L54 36 L36 54 Z'/%3E%3Ccircle cx='36' cy='36' r='4'/%3E%3C/g%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%238E1638' stroke-width='1'%3E%3Cpath d='M0 36 L36 0 L72 36 L36 72 Z'/%3E%3Cpath d='M18 36 L36 18 L54 36 L36 54 Z'/%3E%3Ccircle cx='36' cy='36' r='4'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* ------------------------------------------------ Hero accueil */
@@ -235,7 +235,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.
 .stat{background:var(--midnight);padding:2.4rem 1.8rem;text-align:left}
 .stat__num{
   font-family:var(--font-display);font-size:clamp(2.2rem,3.8vw,3.2rem);font-weight:700;
-  color:var(--gold-light);line-height:1;display:flex;align-items:baseline;gap:.15rem;
+  color:var(--ivory);line-height:1;display:flex;align-items:baseline;gap:.15rem;
 }
 .stat__suffix{font-size:.55em}
 .stat__label{margin-top:.9rem;color:#B9C2D4;font-size:.92rem;line-height:1.5}
@@ -298,7 +298,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.
 .quote-band__img img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
 .quote-band::after{
   content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(8,18,38,.84),rgba(8,18,38,.68) 50%,rgba(8,18,38,.9));
+  background:linear-gradient(180deg,rgba(40,7,20,.85),rgba(30,8,20,.66) 50%,rgba(40,7,20,.9));
 }
 .quote-band blockquote{
   font-family:var(--font-display);font-style:normal;font-weight:600;
@@ -402,13 +402,13 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.
 .cta-band{
   position:relative;
   background:
-    radial-gradient(900px 400px at 15% 120%,rgba(201,162,75,.18),transparent 60%),
-    linear-gradient(150deg,var(--midnight),var(--navy-2));
-  color:var(--ivory);text-align:center;
+    radial-gradient(900px 400px at 15% 120%,rgba(255,255,255,.07),transparent 60%),
+    linear-gradient(150deg,#4E0C22,var(--gold));
+  color:#fff;text-align:center;
   padding-block:clamp(4.5rem,9vw,7.5rem);overflow:hidden;
 }
-.cta-band h2{color:var(--ivory);font-size:clamp(1.9rem,4vw,3rem);max-width:22em;margin-inline:auto}
-.cta-band p{color:#B9C2D4;max-width:56ch;margin:1.2rem auto 2.4rem}
+.cta-band h2{color:#fff;font-size:clamp(1.9rem,4vw,3rem);max-width:22em;margin-inline:auto}
+.cta-band p{color:rgba(255,255,255,.82);max-width:56ch;margin:1.2rem auto 2.4rem}
 
 /* ------------------------------------------------ Page intérieure : hero */
 .page-hero{
@@ -663,3 +663,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.
 
 .flag-wall figcaption{font-size:.64rem;font-weight:600;letter-spacing:.03em;color:#4A5568;margin-top:.4rem;line-height:1.25}
 .flag-wall img{width:44px;height:auto;margin-inline:auto;display:block;box-shadow:0 1px 4px rgba(8,18,38,.25)}
+
+/* Bouton sur fond bordeaux : blanc, écriture bordeaux */
+.cta-band .btn{background:#fff;border-color:#fff;color:var(--gold)}
+.cta-band .btn:hover{background:var(--ivory);border-color:var(--ivory);color:var(--gold-deep)}
