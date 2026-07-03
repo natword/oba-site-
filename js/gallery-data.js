@@ -18,22 +18,22 @@ const OBA_GALLERY = [
 
   {
     src: "images/fondateur-portrait.jpg",
-    legende: "L'Ambassadeur Dr Cheick KEITA, président fondateur d'Open Business Africa",
+    legende: "Ambassadeur Dr Cheick KEITA — Chairman O.B.A. & B.O.I (Bridge Of Innovations), Fondateur de l'OPND (Observatoire Panafricain du Numérique pour le Développement)",
     categorie: "portraits"
   },
   {
     src: "images/fondateur-boardroom.jpg",
-    legende: "L'Ambassadeur Dr Cheick KEITA — Paris",
+    legende: "Ambassadeur Dr Cheick KEITA — Chairman O.B.A. & B.O.I (Bridge Of Innovations), Fondateur de l'OPND (Observatoire Panafricain du Numérique pour le Développement)",
     categorie: "portraits"
   },
   {
     src: "images/fondateur-salon.jpg",
-    legende: "Portrait officiel — Ambassadeur Dr Cheick KEITA",
+    legende: "Portrait officiel — Ambassadeur Dr Cheick KEITA — Chairman O.B.A. & B.O.I (Bridge Of Innovations), Fondateur de l'OPND (Observatoire Panafricain du Numérique pour le Développement)",
     categorie: "portraits"
   },
   {
     src: "images/fondateur-tabouret.jpg",
-    legende: "L'Ambassadeur Dr Cheick KEITA",
+    legende: "Ambassadeur Dr Cheick KEITA — Chairman O.B.A. & B.O.I (Bridge Of Innovations), Fondateur de l'OPND (Observatoire Panafricain du Numérique pour le Développement)",
     categorie: "portraits"
   },
   {

@@ -187,7 +187,11 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:600;line-height:1.
   position:absolute;z-index:4;left:0;bottom:-1.1rem;
   background:var(--gold);color:var(--midnight);
   font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-  padding:.55rem 1.1rem;
+  padding:.55rem 1.1rem;max-width:min(100%,34rem);line-height:1.35;
+}
+.frame figcaption small{
+  display:block;font-size:.64rem;font-weight:600;letter-spacing:.04em;
+  text-transform:none;opacity:.92;margin-top:.2rem;
 }
 
 /* Indicateur scroll */

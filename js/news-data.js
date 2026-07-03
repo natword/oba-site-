@@ -69,7 +69,7 @@ const OBA_NEWS = [
 
   {
     titre: "Titre de l'article — Entrepreneuriat",
-    resume: "Résumé à compléter avec une actualité réelle sur une start-up accompagnée par Bridge of Innovation.",
+    resume: "Résumé à compléter avec une actualité réelle sur une start-up accompagnée par Bridge Of Innovations.",
     date: "Date à publier",
     categorie: "entrepreneuriat",
     image: "https://commons.wikimedia.org/wiki/Special:FilePath/Tables_in_a_boardroom_%28Unsplash%29.jpg?width=900",
