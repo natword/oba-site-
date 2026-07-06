@@ -40,7 +40,7 @@ body{
   color:var(--ink);
   background:var(--paper);
   line-height:1.65;
-  font-size:1.0625rem;
+  font-size:1rem;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
 }
@@ -55,13 +55,13 @@ button{font:inherit;cursor:pointer;border:0;background:none}
 
 /* ------------------------------------------------ Typographie */
 h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.15;color:var(--midnight)}
-.h-hero{font-size:clamp(1.9rem,4vw,3.2rem);font-weight:700;letter-spacing:0}
-.h-section{font-size:clamp(1.55rem,2.9vw,2.3rem);font-weight:700;letter-spacing:0}
-.h-card{font-family:var(--font-display);font-size:1.45rem;font-weight:600;line-height:1.2}
+.h-hero{font-size:clamp(1.6rem,3.2vw,2.5rem);font-weight:700;letter-spacing:0}
+.h-section{font-size:clamp(1.35rem,2.4vw,1.85rem);font-weight:700;letter-spacing:0}
+.h-card{font-family:var(--font-display);font-size:1.25rem;font-weight:600;line-height:1.2}
 .gold-italic{font-style:normal;font-weight:700;color:var(--gold)}
 .section--dark .gold-italic,.hero .gold-italic,.page-hero .gold-italic,.cta-band .gold-italic{color:var(--gold-light)}
 .on-dark{color:var(--ivory)}
-.lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:#3A4557;max-width:62ch}
+.lead{font-size:clamp(.98rem,1.3vw,1.1rem);color:#3A4557;max-width:62ch}
 .on-dark-p{color:#B9C2D4}
 
 /* Étiquette de section : trait + petites capitales */
@@ -234,7 +234,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(201,162,75,.35);border:1px solid rgba(201,162,75,.35)}
 .stat{background:var(--midnight);padding:2.4rem 1.8rem;text-align:left}
 .stat__num{
-  font-family:var(--font-display);font-size:clamp(2.2rem,3.8vw,3.2rem);font-weight:700;
+  font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;
   color:var(--ivory);line-height:1;display:flex;align-items:baseline;gap:.15rem;
 }
 .stat__suffix{font-size:.55em}
@@ -258,7 +258,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.
   font-family:var(--font-display);font-weight:700;font-size:2.6rem;
   color:transparent;-webkit-text-stroke:1px var(--gold);line-height:1;margin-bottom:1.2rem;display:block;
 }
-.pillar h3{font-size:1.28rem;margin-bottom:.8rem}
+.pillar h3{font-size:1.12rem;margin-bottom:.8rem}
 .pillar p{color:#4A5568;font-size:.96rem;flex:1}
 .pillar .text-link{margin-top:1.4rem}
 
@@ -302,7 +302,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.
 }
 .quote-band blockquote{
   font-family:var(--font-display);font-style:normal;font-weight:600;
-  font-size:clamp(1.25rem,2.5vw,1.9rem);line-height:1.35;max-width:20em;margin-inline:auto;
+  font-size:clamp(1.1rem,2vw,1.5rem);line-height:1.35;max-width:20em;margin-inline:auto;
   padding-inline:var(--gutter);
 }
 .quote-band blockquote::before{
@@ -335,7 +335,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.
   display:block;margin-bottom:.35rem;
 }
 .section--dark .timeline__year{color:var(--gold-light)}
-.timeline__item h3{font-size:1.22rem;margin-bottom:.5rem}
+.timeline__item h3{font-size:1.08rem;margin-bottom:.5rem}
 .timeline__item p{color:#4A5568;font-size:.98rem;max-width:60ch}
 .section--dark .timeline__item p{color:#B9C2D4}
 
@@ -354,7 +354,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.
   color:var(--gold-deep);border:1px solid rgba(201,162,75,.5);padding:.3rem .8rem;margin-bottom:1.2rem;
 }
 .card--dark .card__tag{color:var(--gold-light)}
-.card h3{font-size:1.25rem;margin-bottom:.7rem}
+.card h3{font-size:1.1rem;margin-bottom:.7rem}
 .card p{font-size:.95rem;color:#4A5568}
 .card--dark p{color:#B9C2D4}
 
@@ -407,7 +407,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.
   color:#fff;text-align:center;
   padding-block:clamp(4.5rem,9vw,7.5rem);overflow:hidden;
 }
-.cta-band h2{color:#fff;font-size:clamp(1.9rem,4vw,3rem);max-width:22em;margin-inline:auto}
+.cta-band h2{color:#fff;font-size:clamp(1.35rem,2.5vw,2rem);max-width:22em;margin-inline:auto}
 .cta-band p{color:rgba(255,255,255,.82);max-width:56ch;margin:1.2rem auto 2.4rem}
 
 /* ------------------------------------------------ Page intérieure : hero */
@@ -514,7 +514,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.
 .news-featured__media{min-height:340px;position:relative}
 .news-featured__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .news-featured__body{padding:clamp(2rem,4vw,3.5rem);display:flex;flex-direction:column;justify-content:center}
-.news-featured__body h2{color:var(--ivory);font-size:clamp(1.5rem,2.8vw,2.2rem);margin-block:.9rem 1rem}
+.news-featured__body h2{color:var(--ivory);font-size:clamp(1.25rem,2.1vw,1.6rem);margin-block:.9rem 1rem}
 .news-featured__body p{color:#B9C2D4}
 .news-featured__body .news-card__meta{color:#8E97A8}
 .news-featured__body .news-card__meta .cat{color:var(--gold-light)}
@@ -527,7 +527,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.
 .news-card__body{padding:1.6rem;display:flex;flex-direction:column;gap:.7rem;flex:1}
 .news-card__meta{display:flex;gap:1rem;align-items:center;font-size:.78rem;color:#7A8497}
 .news-card__meta .cat{color:var(--gold-deep);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:.7rem}
-.news-card h3{font-size:1.15rem}
+.news-card h3{font-size:1.05rem}
 .news-card p{font-size:.92rem;color:#5A6577;flex:1}
 .news-filters{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:2.5rem}
 .news-filters button{
