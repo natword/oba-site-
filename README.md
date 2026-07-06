@@ -16,6 +16,7 @@ Fraunces & Archivo, animations au défilement, photos officielles intégrées.
 ├── fondateur.html        Le fondateur — Ambassadeur Dr Cheick KEITA
 ├── galerie.html          Galerie photo (filtres + visionneuse plein écran)
 ├── actualites.html       Actualités (alimenté par js/news-data.js)
+├── contact.html          Contact (formulaire → contact@openbusinessafrica.com)
 ├── css/style.css         Feuille de style unique pour tout le site
 ├── js/
 │   ├── script.js         Interactions (menu, animations, compteurs, formulaire)

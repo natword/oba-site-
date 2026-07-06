@@ -112,22 +112,19 @@
       }
     });
 
-    /* ---------------- Formulaire de contact ---------------- */
+    /* ---------------- Formulaire de contact ----------------
+       Le formulaire est envoyé par FormSubmit vers contact@openbusinessafrica.com
+       (envoi natif du navigateur — on affiche seulement l'état). */
     var form = document.getElementById('contactForm');
     if (form) {
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        var name = (form.querySelector('[name="nom"]') || {}).value || '';
-        var org = (form.querySelector('[name="organisation"]') || {}).value || '';
-        var msg = (form.querySelector('[name="message"]') || {}).value || '';
-        var subject = encodeURIComponent('Contact site OBA — ' + name + (org ? ' (' + org + ')' : ''));
-        var body = encodeURIComponent(msg + '\n\n— ' + name);
-        window.location.href = 'mailto:contact@openbusinessafrica.com?subject=' + subject + '&body=' + body;
+      form.addEventListener('submit', function () {
         var status = document.getElementById('formStatus');
+        var btn = document.getElementById('formSubmitBtn');
         if (status) {
-          status.textContent = 'Votre messagerie va s’ouvrir pour finaliser l’envoi. Merci !';
+          status.textContent = 'Envoi de votre message en cours…';
           status.classList.add('is-visible');
         }
+        if (btn) { btn.disabled = true; btn.style.opacity = '.7'; }
       });
     }
 
