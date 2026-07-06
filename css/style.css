@@ -92,10 +92,17 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.
   padding-block:1.15rem;
 }
 .site-header.is-scrolled{
-  background:rgba(8,18,38,.86);
-  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
-  box-shadow:0 1px 0 rgba(201,162,75,.25);
+  background:rgba(8,18,38,.97);
+  box-shadow:0 1px 0 rgba(142,22,56,.35);
   padding-block:.55rem;
+}
+/* Flou uniquement sur grand écran : sur mobile, backdrop-filter sur le header
+   casse le positionnement du menu plein écran (bug iOS/WebKit) */
+@media (min-width:901px){
+  .site-header.is-scrolled{
+    background:rgba(8,18,38,.86);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  }
 }
 .site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:2rem}
 
