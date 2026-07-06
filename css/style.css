@@ -412,7 +412,7 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.
 
 /* ------------------------------------------------ Page intérieure : hero */
 .page-hero{
-  position:relative;
+  position:relative;isolation:isolate;
   background:
     radial-gradient(900px 500px at 90% -20%,rgba(26,55,104,.7),transparent 60%),
     linear-gradient(165deg,var(--midnight),var(--navy));
@@ -667,3 +667,39 @@ h1,h2,h3,.display{font-family:var(--font-display);font-weight:700;line-height:1.
 /* Bouton sur fond bordeaux : blanc, écriture bordeaux */
 .cta-band .btn{background:#fff;border-color:#fff;color:var(--gold)}
 .cta-band .btn:hover{background:var(--ivory);border-color:var(--ivory);color:var(--gold-deep)}
+
+/* ------------------------------------------------ En-têtes de page habillés */
+.page-hero>.container{position:relative;z-index:3}
+.page-hero__bg{
+  position:absolute;inset:-5%;z-index:0;
+  background-size:cover;background-position:center 30%;
+  animation:heroDrift 26s ease-in-out infinite alternate;
+  filter:saturate(1.05);
+}
+.page-hero__bg::after{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(105deg,rgba(8,18,38,.97) 22%,rgba(8,18,38,.86) 52%,rgba(10,27,57,.55) 100%),
+    linear-gradient(0deg,rgba(8,18,38,.92) 0%,rgba(8,18,38,0) 38%);
+}
+@keyframes heroDrift{
+  from{transform:scale(1) translateX(0)}
+  to{transform:scale(1.07) translateX(1.2%)}
+}
+/* Carte de l'Afrique en filigrane, à droite */
+.africa-mark{
+  position:absolute;z-index:1;right:-6%;bottom:-22%;width:min(52%,620px);aspect-ratio:1;
+  background:url("https://commons.wikimedia.org/wiki/Special:FilePath/Africa_(orthographic_projection).svg?width=900") center/contain no-repeat;
+  opacity:.10;pointer-events:none;
+  filter:grayscale(1) brightness(2.2);
+  animation:africaFloat 14s ease-in-out infinite alternate;
+}
+@keyframes africaFloat{from{transform:translateY(0)}to{transform:translateY(-14px)}}
+/* Trait d'accent sous le fil d'Ariane */
+.page-hero .breadcrumb{position:relative;z-index:3}
+@media (prefers-reduced-motion:reduce){
+  .page-hero__bg,.africa-mark{animation:none}
+}
+@media (max-width:700px){
+  .africa-mark{width:80%;right:-18%;bottom:-10%;opacity:.07}
+}
